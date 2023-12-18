@@ -1,0 +1,97 @@
+<html>
+<head>
+    <script src="jquery.min.js"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <style>
+
+#starsBox span {
+  display: inline-block;
+  width: auto;
+  position: absolute;
+  border-radius: 100%;
+  transition: 100s linear;
+}
+    </style>
+<title>Earth🌍</title>
+	<link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/jpg" sizes="144x144" href="../images/tb.jpg"/>
+    <link rel="apple-touch-icon" type="image/jpg" sizes="144x144" href="../images/tb.jpg"/>
+
+
+</head>
+<body>
+<div id="starsBox"></div>
+<a href="" class="sun">
+            <img src="./images/di.gif" onmouseover='src="./images/pou.jpg"' onmouseout='src="./images/di.gif"'/>
+        </a>
+<h2>Earth <br>Our home planet is the third <br>planet from the Sun, and the<br>
+    only place we know of so far<br> that’s inhabited by living things.<br>
+
+The Latest
+
+  One Year From <br>Launch: US-European Satellite <br>to Track World's Water
+  NASA's<br> Eyes on the Earth Puts the World <br>at Your Fingertips
+While Earth is<br> only the fifth largest planet in the <br>
+    solar system, it is the only world<br> in our solar system with liquid <br>
+    water on the surface. Just slightly<br> larger than nearby Venus, Earth<br>
+    is the biggest of the four planets <br>closest to the Sun, all of which are <br>
+    made of rock and metal.
+
+The name<br> Earth is at least 1,000 years old.<br> All of the planets, except for Earth, <br>
+    were named after Greek and Roman<br> gods and goddesses. However, the <br>
+    name Earth is a Germanic word, <br>
+    which simply means “the ground.”<br>With a radius of 3,959 miles (6,371 <br>
+    kilometers), Earth is the biggest <br>planet overall.
+
+<br><br>
+    From:NASA
+
+
+</h2>
+<h4>地球<br>（英文名：Earth；拉丁文：Terra）是距离太阳的第三颗行星，也是目前已知的唯一孕育和支持生命的天
+    体。地球表面的大约 29.2% 是由大陆和岛屿组成的陆地。剩余的 70.8% 被水覆盖，大部分被海洋、海湾和其他咸水
+    体覆盖，也被湖泊、河流和其他淡水覆盖，它们共同构成了水圈。地球的大部分极地地区都被冰覆盖。地球外层分为几
+    个刚性构造板块，它们在数百万年的时间里在地表迁移，而其内部仍然保持活跃，有一个固体铁内核、一个产生地球磁
+    场的液体外核，以及一个驱动板块构造的对流地幔。地球是最密集的行星太阳系和最大的和最庞大的四个岩石行星。
+    地球是人类共同生活的家园，人类只有一个地球。
+<br><br>
+    来自《百度百科》
+</h4>
+<h3>Design by JavaGroup</h3>
+
+<script type="text/javascript">
+var cols = ['#f5d76e','#f7ca18','#f4d03f','#ececec','#ecf0f1','#a2ded0'];
+var stars = 850;
+
+for (var i = 0; i <= stars; i++) {
+
+    var size = Math.random()*6;
+  var color = cols[parseInt(Math.random()*4)];
+
+    $('#starsBox').prepend('<span style=" width: ' + size + 'px; height: ' + size + 'px; top: ' + Math.random()*280 + '%; left: ' + Math.random()*100 + '%; background: ' + color + '; box-shadow: 0 0 '+ Math.random()*10 +'px' + color + ';"></span>') ;
+};
+
+setTimeout(function(){
+    $('#starsBox span').each(function(){
+         $(this).css('top', Math.random()*280 + '%').css('left', Math.random()*100 + '%');
+  });
+}, 1);
+
+setInterval(function(){
+    $('#starsBox span').each(function(){
+         $(this).css('top', Math.random()*280 + '%').css('left', Math.random()*100 + '%');
+  });
+}, 100000);
+</script>
+<a href="" class="hui">
+            <img src="../images/hui.jpg" />
+        </a>
+<h5>BACK</h5>
+<button></button>
+<h6>MORE</h6>
+<a href="" class="more">
+            <img src="../images/more.png" />
+        </a>
+<button class="button2">aaaaa</button>
+</body>
+</html>

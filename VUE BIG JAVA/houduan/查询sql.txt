@@ -1,0 +1,15 @@
+SELECT CONCAT(JSON_OBJECT('param1',年号干支纪年,'param2',公元纪年,'param3',天象记录),',') FROM planet.javadatabase where 天象记录 LIKE '%太白%';--    金星
+
+SELECT CONCAT(JSON_OBJECT('param1',年号干支纪年,'param2',公元纪年,'param3',天象记录),',') FROM planet.javadatabase where 天象记录 LIKE '%荧惑%';--    火星
+
+SELECT CONCAT(JSON_OBJECT('param1',年号干支纪年,'param2',公元纪年,'param3',天象记录),',') FROM planet.javadatabase where 天象记录 LIKE '%岁星%';--    木星
+
+SELECT CONCAT(JSON_OBJECT('param1',年号干支纪年,'param2',公元纪年,'param3',天象记录),',') FROM planet.javadatabase where 天象记录 LIKE '%辰星%';--    水星
+
+SELECT CONCAT(JSON_OBJECT('param1',年号干支纪年,'param2',公元纪年,'param3',天象记录),',') FROM planet.javadatabase where 天象记录 LIKE '%镇星%';--    土星
+
+SELECT CONCAT(JSON_OBJECT('param1',年号干支纪年,'param2',公元纪年,'param3',天象记录),',') FROM planet.javadatabase where 天象记录 LIKE '%日%';--    太阳
+
+SELECT CONCAT(JSON_OBJECT('param1',年号干支纪年,'param2',公元纪年,'param3',天象记录),',') FROM planet.javadatabase where 天象记录 LIKE '%月%';--    月亮
+
+SELECT CONCAT(JSON_OBJECT('param1',年号干支纪年,'param2',公元纪年,'param3',天象记录),',') FROM planet.javadatabase where 天象记录 LIKE '%彗星%';--    彗星

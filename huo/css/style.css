@@ -1,0 +1,126 @@
+   body {
+	background:url('../images/sun.jpg') no-repeat ;
+     background-size:100%;
+
+}
+body:hover{cursor:default;
+}
+
+
+
+h2 {
+    color: #fff;
+	font-size:30px;
+
+	position: absolute;
+    margin:740px 190px ;
+}
+h3 {
+   color: #fff;
+	font-size:15px;
+	position: absolute;
+	left:460px;
+    margin:2080px 190px ;
+}
+
+h4 {
+    color: #fff;
+	font-size:30px;
+	position: absolute;
+	left: 650px;
+    margin:740px  190px ;
+}
+h5 {
+    color: #fff;
+	font-size:30px;
+	position: absolute;
+	left: 650px;
+    margin:2130px  -470px ;
+}
+h6 {
+    color: #fff;
+	font-size:30px;
+	position: absolute;
+	left: 650px;
+    margin:2130px  470px ;
+}
+
+
+@keyframes cc{
+	0%{opacity:1;transform: scale(0.25) ;top: -75px;left: 350px;}
+
+	100%{opacity: 1;transform: scale(1) rotateX(0deg);top: 300px;}
+}
+
+    .sun {         position:absolute;
+                top:300px;
+                left:500;
+                display: block;
+                margin: 0 auto;
+                width:400px;
+                overflow: hidden;
+                border-radius: 100%;
+                animation: cc 4s ease-in-out ;
+            }
+
+            .sun img {
+                left:100%;
+                top: 100%;
+                width: 100%;
+                transform: scale(1);
+                transition: all 1s ease 0s;
+                border-radius: 100%;
+                cursor:default;
+            }
+            .sun:hover img {
+                cursor:pointer;
+            }
+
+
+
+
+.hui {         position:absolute;
+                top:2100px;
+                left:50;
+                width:150px;
+                overflow: hidden;
+
+
+            }
+.more {         position:absolute;
+                top:2100px;
+                left:1250;
+                width:150px;
+                overflow: hidden;
+
+
+            }
+
+button{
+width:300px;
+height: 100px;
+top:2100px;
+position:absolute;
+background-color: Transparent;
+            background-repeat:no-repeat;
+            border: none;
+            cursor:pointer;
+            overflow: hidden;
+
+}
+
+.button2{
+width:300px;
+height: 100px;
+top:2100px;
+left:1100px;
+position:absolute;
+background-color: Transparent;
+            background-repeat:no-repeat;
+            border: none;
+            cursor:pointer;
+            overflow: hidden;
+
+}
+
+

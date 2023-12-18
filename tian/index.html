@@ -1,0 +1,93 @@
+<html>
+<head>
+    <script src="jquery.min.js"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <style>
+
+#starsBox span {
+  display: inline-block;
+  width: auto;
+  position: absolute;
+  border-radius: 100%;
+  transition: 100s linear;
+}
+    </style>
+<title>Uranus</title>
+	<link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/jpg" sizes="144x144" href="../images/tb.jpg"/>
+    <link rel="apple-touch-icon" type="image/jpg" sizes="144x144" href="../images/tb.jpg"/>
+
+
+</head>
+<body>
+<div id="starsBox"></div>
+<a href="" class="sun">
+            <img src="./images/tian.gif" onmouseover='src="./images/pou.jpg"' onmouseout='src="./images/tian.gif"'/>
+        </a>
+<h2>Uranus <br>The seventh planet from the Sun <br>
+    with the third largest diameter in <br>our solar system, Uranus is very<br>
+    cold and windy. The ice giant is<br> surrounded by 13 faint rings and<br>
+    27 small moons as it rotates at a <br>nearly 90-degree angle from the <br>
+    plane of its orbit. This unique tilt <br>makes Uranus appear to spin on<br>
+    its side, orbiting the Sun like a <br>rolling ball.
+
+The first planet found <br>with the aid of a telescope, Uranus<br>
+    was discovered in 1781 by<br> astronomer William Herschel, <br>
+    although he originally thought it <br>was either a comet or a star. It was <br>
+    two years later that the object was<br> universally accepted as a new planet,<br> in part because of observations by<br>
+    astronomer Johann Elert Bode.<br>William Herschel tried unsuccessfully <br>
+    to name his discovery Georgium Sidus <br>after King George III. Instead, the <br>
+    planet was named for Uranus, the <br>
+    Greek god of the sky, as suggested by<br> Johann Bode.
+
+<br><br>
+    From:NASA
+
+
+</h2>
+<h4>天王星<br>英文：Uranus，天文符号：⛢，占星符号：♅），为太阳系八大行星之一，是太阳系由内向外的第七颗行星（18.37~20.08天文单位），
+    其体积在太阳系中排名第三（比海王星大），质量排名第四（小于海王星），几乎横躺着围绕太阳公转。封面图为旅行者2号飞掠天王星最近时拍摄的照片。
+天王星是第一颗使用望远镜发现的行星。天王星拥有27颗已知天然卫星，其中有5颗规模较大，另外还有13条较为暗弱的行星环。
+据推测，其内部可能含有丰富的重元素。地幔由甲烷和氨的冰组成，可能含有水。内核由冰和岩石组成。天王星是
+    太阳系内大气层最冷的行星，最低温度为49K，只要14个小时就能完整的环绕行星自转一周。
+<br><br>
+    来自《百度百科》
+</h4>
+<h3>Design by JavaGroup</h3>
+
+<script type="text/javascript">
+var cols = ['#f5d76e','#f7ca18','#f4d03f','#ececec','#ecf0f1','#a2ded0'];
+var stars = 850;
+
+for (var i = 0; i <= stars; i++) {
+
+    var size = Math.random()*6;
+  var color = cols[parseInt(Math.random()*4)];
+
+    $('#starsBox').prepend('<span style=" width: ' + size + 'px; height: ' + size + 'px; top: ' + Math.random()*280 + '%; left: ' + Math.random()*100 + '%; background: ' + color + '; box-shadow: 0 0 '+ Math.random()*10 +'px' + color + ';"></span>') ;
+};
+
+setTimeout(function(){
+    $('#starsBox span').each(function(){
+         $(this).css('top', Math.random()*280 + '%').css('left', Math.random()*100 + '%');
+  });
+}, 1);
+
+setInterval(function(){
+    $('#starsBox span').each(function(){
+         $(this).css('top', Math.random()*280 + '%').css('left', Math.random()*100 + '%');
+  });
+}, 100000);
+</script>
+<a href="" class="hui">
+            <img src="../images/hui.jpg" />
+        </a>
+<h5>BACK</h5>
+<button></button>
+<h6>MORE</h6>
+<a href="" class="more">
+            <img src="../images/more.png" />
+        </a>
+<button class="button2">aaaaa</button>
+</body>
+</html>

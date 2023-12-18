@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<script src="jquery.min.js"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<style>
+
+
+#starsBox span {
+  display: inline-block;
+  width: auto;
+  position: absolute;
+  border-radius: 100%;
+  transition: 100s linear;
+}
+
+
+</style>
+	<title>星空</title>
+	<link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/jpg" sizes="144x144" href="../images/tb.jpg"/>
+    <link rel="apple-touch-icon" type="image/jpg" sizes="144x144" href="../images/tb.jpg"/>
+
+		</head>
+<body>
+	<h1>starry✧sky</h1>
+	<div id="starsBox"></div>
+  	<div class="login">
+     <header>
+	    <h2>Login Now</h2>
+	 </header>
+	 <div class="sr">
+	    <form>
+		    <div class="name">
+				<input type="text" name="name" class="name" placeholder="Username" required="">
+			</div>
+			 <div class="name">
+				<input type="password" name="password" class="password" placeholder="Password" required="">
+			</div>
+			<ul>
+				<li>
+					<input type="checkbox" id="brand1" value="">
+					<label for="brand1"><span></span>Remember me</label>
+				</li>
+			</ul>
+			<button class="dl">Login</button>
+		</form>
+	 </div>
+  </div>
+<h3>Design by Java Group</h3>
+
+
+	<p></p>
+<script type="text/javascript">
+var cols = ['#f5d76e','#f7ca18','#f4d03f','#ececec','#ecf0f1','#a2ded0'];
+var stars = 250;
+
+for (var i = 0; i <= stars; i++) {
+
+    var size = Math.random()*6;
+  var color = cols[parseInt(Math.random()*4)];
+
+    $('#starsBox').prepend('<span style=" width: ' + size + 'px; height: ' + size + 'px; top: ' + Math.random()*100 + '%; left: ' + Math.random()*100 + '%; background: ' + color + '; box-shadow: 0 0 '+ Math.random()*10 +'px' + color + ';"></span>') ;
+};
+
+setTimeout(function(){
+    $('#starsBox span').each(function(){
+         $(this).css('top', Math.random()*100 + '%').css('left', Math.random()*100 + '%');
+  });
+}, 1);
+
+setInterval(function(){
+    $('#starsBox span').each(function(){
+         $(this).css('top', Math.random()*100 + '%').css('left', Math.random()*100 + '%');
+  });
+}, 100000);
+</script>
+</body>
+</html>
